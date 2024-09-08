@@ -183,7 +183,19 @@ refer to as the &quot;equation compiler.&quot; The equation compiler is not part
 of the trusted code base; its output consists of terms that are
 checked independently by the kernel.</p>
 <h3><a class="header" href="#contents" id="contents">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="#pattern-matching">Pattern Matching</a></li>
+<li><a href="#wildcards-and-overlapping-patterns">Wildcards and Overlapping Patterns</a></li>
+<li><a href="#structural-recursion-and-induction">Structural Recursion and Induction</a></li>
+<li><a href="#local-recursive-declarations">Local recursive declarations</a></li>
+<li><a href="#well-founded-recursion-and-induction">Well-Founded Recursion and Induction</a></li>
+<li><a href="#mutual-recursion">Mutual Recursion</a></li>
+<li><a href="#dependent-pattern-matching">Dependent Pattern Matching</a></li>
+<li><a href="#inaccessible-patterns">Inaccessible Patterns</a></li>
+<li><a href="#match-expressions">Match Expressions</a></li>
+<li><a href="#local-recursive-declarations-1">Local Recursive Declarations</a></li>
+<li><a href="#exercises">Exercises</a></li>
+</ul>
 <h2><a class="header" href="#pattern-matching" id="pattern-matching">Pattern Matching</a></h2>
 <p>The interpretation of schematic patterns is the first step of the
 compilation process. We have seen that the <code>casesOn</code> recursor can

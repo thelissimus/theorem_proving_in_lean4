@@ -265,7 +265,20 @@ theory known as the <em>Calculus of Constructions</em>, with a countable
 hierarchy of non-cumulative universes and inductive types. By the end
 of this chapter, you will understand much of what this means.</p>
 <h3><a class="header" href="#contents" id="contents">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="dependent_type_theory.html#simple-type-theory">Simple Type Theory</a></li>
+<li><a href="dependent_type_theory.html#types-as-objects">Types as objects</a></li>
+<li><a href="dependent_type_theory.html#function-abstraction-and-evaluation">Function Abstraction and Evaluation</a></li>
+<li><a href="dependent_type_theory.html#definitions">Definitions</a></li>
+<li><a href="dependent_type_theory.html#local-definitions">Local Definitions</a></li>
+<li><a href="dependent_type_theory.html#variables-and-sections">Variables and Sections</a></li>
+<li><a href="dependent_type_theory.html#namespaces">Namespaces</a>
+<ul>
+<li><a href="dependent_type_theory.html#what-makes-dependent-type-theory-dependent">What makes dependent type theory dependent?</a></li>
+<li><a href="dependent_type_theory.html#implicit-arguments">Implicit Arguments</a></li>
+</ul>
+</li>
+</ul>
 <h2><a class="header" href="#simple-type-theory" id="simple-type-theory">Simple Type Theory</a></h2>
 <p>&quot;Type theory&quot; gets its name from the fact that every expression has an
 associated <em>type</em>. For example, in a given context, <code>x + 0</code> may
@@ -1149,7 +1162,22 @@ Lean. In this chapter, we will begin to explain how to write
 mathematical assertions and proofs in the language of dependent type
 theory as well.</p>
 <h3><a class="header" href="#contents-1" id="contents-1">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="propositions_and_proofs.html#propositions-as-types">Propositions as Types</a></li>
+<li><a href="propositions_and_proofs.html#working-with-propositions-as-types">Working with Propositions as Types</a></li>
+<li><a href="propositions_and_proofs.html#propositional-logic">Propositional Logic</a>
+<ul>
+<li><a href="propositions_and_proofs.html#conjunction">Conjunction</a></li>
+<li><a href="propositions_and_proofs.html#disjunction">Disjunction</a></li>
+<li><a href="propositions_and_proofs.html#negation-and-falsity">Negation and Falsity</a></li>
+<li><a href="propositions_and_proofs.html#logical-equivalence">Logical Equivalence</a></li>
+</ul>
+</li>
+<li><a href="propositions_and_proofs.html#introducing-auxiliary-subgoals">Introducing Auxiliary Subgoals</a></li>
+<li><a href="propositions_and_proofs.html#classical-logic">Classical Logic</a></li>
+<li><a href="propositions_and_proofs.html#examples-of-propositional-validities">Examples of Propositional Validities</a></li>
+<li><a href="propositions_and_proofs.html#exercises">Exercises</a></li>
+</ul>
 <h2><a class="header" href="#propositions-as-types" id="propositions-as-types">Propositions as Types</a></h2>
 <p>One strategy for proving assertions about objects defined in the
 language of dependent type theory is to layer an assertion language
@@ -1928,7 +1956,14 @@ statements involving the propositional connectives. In this chapter,
 we extend the repertoire of logical constructions to include the
 universal and existential quantifiers, and the equality relation.</p>
 <h3><a class="header" href="#contents-2" id="contents-2">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="quantifiers_and_equality.html#the-universal-quantifier">The Universal Quantifier</a></li>
+<li><a href="quantifiers_and_equality.html#equality">Equality</a></li>
+<li><a href="quantifiers_and_equality.html#calculational-proofs">Calculational Proofs</a></li>
+<li><a href="quantifiers_and_equality.html#the-existential-quantifier">The Existential Quantifier</a></li>
+<li><a href="quantifiers_and_equality.html#more-on-the-proof-language">More on the Proof Language</a></li>
+<li><a href="quantifiers_and_equality.html#exercises">Exercises</a></li>
+</ul>
 <h2><a class="header" href="#the-universal-quantifier" id="the-universal-quantifier">The Universal Quantifier</a></h2>
 <p>Notice that if <code>α</code> is any type, we can represent a unary predicate
 <code>p</code> on <code>α</code> as an object of type <code>α → Prop</code>. In that case, given
@@ -2742,7 +2777,18 @@ instruction. But they can also be shorter and easier to
 write. Moreover, tactics offer a gateway to using Lean's automation,
 since automated procedures are themselves tactics.</p>
 <h3><a class="header" href="#contents-3" id="contents-3">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="tactics.html#entering-tactic-mode">Entering Tactic Mode</a></li>
+<li><a href="tactics.html#basic-tactics">Basic Tactics</a></li>
+<li><a href="tactics.html#more-tactics">More Tactics</a></li>
+<li><a href="tactics.html#structuring-tactic-proofs">Structuring Tactic Proofs</a></li>
+<li><a href="tactics.html#tactic-combinators">Tactic Combinators</a></li>
+<li><a href="tactics.html#rewriting">Rewriting</a></li>
+<li><a href="tactics.html#using-the-simplifier">Using the Simplifier</a></li>
+<li><a href="tactics.html#split-tactic">Split Tactic</a></li>
+<li><a href="tactics.html#extensible-tactics">Extensible Tactics</a></li>
+<li><a href="tactics.html#exercises">Exercises</a></li>
+</ul>
 <h2><a class="header" href="#entering-tactic-mode" id="entering-tactic-mode">Entering Tactic Mode</a></h2>
 <p>Conceptually, stating a theorem or introducing a <code>have</code> statement
 creates a goal, namely, the goal of constructing a term with the
@@ -3976,7 +4022,26 @@ theory to explore some pragmatic aspects of interacting with Lean.</p>
 away. We recommend skimming this section to get a sense of Lean's
 features, and then returning to it as necessary.</p>
 <h3><a class="header" href="#contents-4" id="contents-4">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="interacting_with_lean.html#importing-files">Importing Files</a></li>
+<li><a href="interacting_with_lean.html#more-on-sections">More on Sections</a></li>
+<li><a href="interacting_with_lean.html#more-on-namespaces">More on Namespaces</a></li>
+<li><a href="interacting_with_lean.html#attributes">Attributes</a></li>
+<li><a href="interacting_with_lean.html#more-on-implicit-arguments">More on Implicit Arguments</a></li>
+<li><a href="interacting_with_lean.html#notation">Notation</a>
+<ul>
+<li><a href="interacting_with_lean.html#notations-and-precedence">Notations and Precedence</a></li>
+</ul>
+</li>
+<li><a href="interacting_with_lean.html#coercions">Coercions</a></li>
+<li><a href="interacting_with_lean.html#displaying-information">Displaying Information</a></li>
+<li><a href="interacting_with_lean.html#setting-options">Setting Options</a></li>
+<li><a href="interacting_with_lean.html#using-the-library">Using the Library</a></li>
+<li><a href="interacting_with_lean.html#auto-bound-implicit-arguments">Auto Bound Implicit Arguments</a></li>
+<li><a href="interacting_with_lean.html#implicit-lambdas">Implicit Lambdas</a></li>
+<li><a href="interacting_with_lean.html#sugar-for-simple-functions">Sugar for Simple Functions</a></li>
+<li><a href="interacting_with_lean.html#named-arguments">Named Arguments</a></li>
+</ul>
 <h2><a class="header" href="#importing-files" id="importing-files">Importing Files</a></h2>
 <p>The goal of Lean's front end is to interpret user input, construct
 formal expressions, and check that they are well-formed and type-correct.
@@ -4810,7 +4875,18 @@ to start with a low-level, hands-on understanding. We will start with
 some basic examples of inductive types, and work our way up to more
 elaborate and complex examples.</p>
 <h3><a class="header" href="#contents-5" id="contents-5">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="inductive_types.html#enumerated-types">Enumerated Types</a></li>
+<li><a href="inductive_types.html#constructors-with-arguments">Constructors with Arguments</a></li>
+<li><a href="inductive_types.html#inductively-defined-propositions">Inductively Defined Propositions</a></li>
+<li><a href="inductive_types.html#defining-the-natural-numbers">Defining the Natural Numbers</a></li>
+<li><a href="inductive_types.html#other-recursive-data-types">Other Recursive Data Types</a></li>
+<li><a href="inductive_types.html#tactics-for-inductive-types">Tactics for Inductive Types</a></li>
+<li><a href="inductive_types.html#inductive-families">Inductive Families</a></li>
+<li><a href="inductive_types.html#axiomatic-details">Axiomatic Details</a></li>
+<li><a href="inductive_types.html#mutual-and-nested-inductive-types">Mutual and Nested Inductive Types</a></li>
+<li><a href="inductive_types.html#exercises">Exercises</a></li>
+</ul>
 <h2><a class="header" href="#enumerated-types" id="enumerated-types">Enumerated Types</a></h2>
 <p>The simplest kind of inductive type is a type with a finite, enumerated list of elements.</p>
 <pre><code class="language-lean">inductive Weekday where
@@ -6168,7 +6244,19 @@ refer to as the &quot;equation compiler.&quot; The equation compiler is not part
 of the trusted code base; its output consists of terms that are
 checked independently by the kernel.</p>
 <h3><a class="header" href="#contents-6" id="contents-6">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="induction_and_recursion.html#pattern-matching">Pattern Matching</a></li>
+<li><a href="induction_and_recursion.html#wildcards-and-overlapping-patterns">Wildcards and Overlapping Patterns</a></li>
+<li><a href="induction_and_recursion.html#structural-recursion-and-induction">Structural Recursion and Induction</a></li>
+<li><a href="induction_and_recursion.html#local-recursive-declarations">Local recursive declarations</a></li>
+<li><a href="induction_and_recursion.html#well-founded-recursion-and-induction">Well-Founded Recursion and Induction</a></li>
+<li><a href="induction_and_recursion.html#mutual-recursion">Mutual Recursion</a></li>
+<li><a href="induction_and_recursion.html#dependent-pattern-matching">Dependent Pattern Matching</a></li>
+<li><a href="induction_and_recursion.html#inaccessible-patterns">Inaccessible Patterns</a></li>
+<li><a href="induction_and_recursion.html#match-expressions">Match Expressions</a></li>
+<li><a href="induction_and_recursion.html#local-recursive-declarations-1">Local Recursive Declarations</a></li>
+<li><a href="induction_and_recursion.html#exercises">Exercises</a></li>
+</ul>
 <h2><a class="header" href="#pattern-matching" id="pattern-matching">Pattern Matching</a></h2>
 <p>The interpretation of schematic patterns is the first step of the
 compilation process. We have seen that the <code>casesOn</code> recursor can
@@ -7500,7 +7588,11 @@ automatically generates all the projection functions. The
 previously defined ones. Moreover, Lean provides convenient notation
 for defining instances of a given structure.</p>
 <h3><a class="header" href="#contents-7" id="contents-7">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="structures_and_records.html#declaring-structures">Declaring Structures</a></li>
+<li><a href="structures_and_records.html#objects">Objects</a></li>
+<li><a href="structures_and_records.html#inheritance">Inheritance</a></li>
+</ul>
 <h2><a class="header" href="#declaring-structures" id="declaring-structures">Declaring Structures</a></h2>
 <p>The structure command is essentially a &quot;front end&quot; for defining
 inductive data types. Every <code>structure</code> declaration introduces a
@@ -7722,7 +7814,18 @@ example : rgp.red = 200 := rfl
 </code></pre>
 <h1><a class="header" href="#type-classes" id="type-classes">Type Classes</a></h1>
 <h3><a class="header" href="#contents-8" id="contents-8">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="type_classes.html#chaining-instances">Chaining Instances</a></li>
+<li><a href="type_classes.html#tostring">ToString</a></li>
+<li><a href="type_classes.html#numerals">Numerals</a></li>
+<li><a href="type_classes.html#output-parameters">Output Parameters</a></li>
+<li><a href="type_classes.html#default-instances">Default Instances</a></li>
+<li><a href="type_classes.html#local-instances">Local Instances</a></li>
+<li><a href="type_classes.html#scoped-instances">Scoped Instances</a></li>
+<li><a href="type_classes.html#decidable-propositions">Decidable Propositions</a></li>
+<li><a href="type_classes.html#managing-type-class-inference">Managing Type Class Inference</a></li>
+<li><a href="type_classes.html#coercions-using-type-classes">Coercions using Type Classes</a></li>
+</ul>
 <p>Type classes were introduced as a principled way of enabling
 ad-hoc polymorphism in functional programming languages. We first observe that it
 would be easy to implement an ad-hoc polymorphic function (such as addition) if the
@@ -8595,7 +8698,12 @@ example (S1 S2 : Semigroup) (f : Morphism S1 S2) (a : S1) :
 goals, even inside function abstractions and dependent arrows, to apply rewriting or
 simplifying steps.</p>
 <h3><a class="header" href="#contents-9" id="contents-9">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="conv.html#basic-navigation-and-rewriting">Basic navigation and rewriting</a></li>
+<li><a href="conv.html#pattern-matching">Pattern matching</a></li>
+<li><a href="conv.html#structuring-conversion-tactics">Structuring conversion tactics</a></li>
+<li><a href="conv.html#other-tactics-inside-conversion-mode">Other tactics inside conversion mode</a></li>
+</ul>
 <h2><a class="header" href="#basic-navigation-and-rewriting" id="basic-navigation-and-rewriting">Basic navigation and rewriting</a></h2>
 <p>As a first example, let us prove example
 <code>(a b c : Nat) : a * (b * c) = a * (c * b)</code>
@@ -8823,7 +8931,14 @@ compatible with bytecode evaluation, whereas the third is not amenable
 to computational interpretation. We will spell out the details more
 precisely below.</p>
 <h3><a class="header" href="#contents-10" id="contents-10">Contents</a></h3>
-<!-- toc -->
+<ul>
+<li><a href="axioms_and_computation.html#historical-and-philosophical-context">Historical and Philosophical Context</a></li>
+<li><a href="axioms_and_computation.html#propositional-extensionality">Propositional Extensionality</a></li>
+<li><a href="axioms_and_computation.html#function-extensionality">Function Extensionality</a></li>
+<li><a href="axioms_and_computation.html#quotients">Quotients</a></li>
+<li><a href="axioms_and_computation.html#choice">Choice</a></li>
+<li><a href="axioms_and_computation.html#the-law-of-the-excluded-middle">The Law of the Excluded Middle</a></li>
+</ul>
 <h2><a class="header" href="#historical-and-philosophical-context" id="historical-and-philosophical-context">Historical and Philosophical Context</a></h2>
 <p>For most of its history, mathematics was essentially computational:
 geometry dealt with constructions of geometric objects, algebra was
